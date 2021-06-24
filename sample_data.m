@@ -26,7 +26,7 @@ end
 training_data = zeros(row,(col - num_classes));
 catagory_data = zeros(row,num_classes);
 for i=1:row
-    for j=1:103
+    for j=1: (col - num_classes)
          training_data(i,j) = samle_dat(i,j);
     end
 end
